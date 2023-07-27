@@ -14,32 +14,36 @@
         font style{
             font-family: 'Lato', sans-serif;;
         }
+        #check:checked -ul{
+          left: 0;
+        }
     </style>
 
 </head>
-<body>
+<body class="">
     <header class="  ">
-        <div class=" bg-red-500 w-11/12 h-32                                                              rounded-full mt-10 w-full ">
-            <div class="flex justify-between align-middle justify-center   mt-12  w-10/12 mx-10 absolute">
+        <div class=" bg-red-500 w-11/12 h-32 rounded-full mt-10 w-full ">
+            <div class="   flex justify-between align-middle justify-center   mt-12  w-10/12 mx-10 absolute">
                 <nav class="">
-                    <ul class="flex  justify-around text-white gap-9  sm:col-span-1">
+                    <ul class=" flex  justify-around text-white gap-9 >
                         <li><a href="">Home</a></li>
                         <li><a href="">About Us</a></li>
                         <li><a href="">Shop</a></li>
                         <li><a href="">All Fruits</a></li> 
                     </ul>
                 </nav>
-                <div class="flex ">
+                <div class="flex sm:float-left  ">
                     <img class="w-14 h-16" src="images/logo.png" alt="">
                     <h3 class="sm:text-black text-4xl text-white gap-2 text-center mx-5 ">Fruit Burst</h3>
                 </div>
-                <div>
-                    <form action="" class=" w-full min-w-0 flex align-middle px-0.5 bg-white rounded-full pr-10 mx-20 ">
+                <div class="">
+                    <form action="" class=" w-full min-w-0 flex align-middle px-0.5 bg-white rounded-full pr-10 mx-20  ">
                         <input class="bg-transparent flex-1 border-0 outline-none p-2 text-base w-40" type="text" placeholder="Search.." name="search" >
                         <button type="submit"><i class="fa fa-search"></i></button>
                       </form>
-                      <button><i class="fa-solid fa-bars"></i></button>
+                      
                 </div>
+                <button class="hidden"><i class="fa-solid fa-bars"></i></button>
             </div>
         </div>
         <!-- end navber -->
@@ -205,6 +209,7 @@
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                               </div>
                               <button class="mt-5 mx-32 mb-5 text-red-500">Details</button>
+                              
                         </div>
                         <div class="w-80 h-96  m-auto border-solid border-2 border-slate-200  rounded-md">
                             <img class="mt-10 mx-28" src="images/fruit9.png" alt="">
@@ -218,15 +223,24 @@
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                               </div>
                               <button class="mt-5 mx-32 mb-5 text-red-500">Details</button>
-                        </div>
+                           
                     </div>
+                    </form>
+                  </dialog>
+                        </div>
+                        
+                    </div>
+                    
                 </div>
-                <button class="text-white bg-red-500 w-36 h-16 justify-center mt-10  m-auto text-center mx-96 rounded-md">Shop All</button>
+               
             </div>
+            <div class=" text-center">
+              <button class="text-white bg-red-500 w-36 h-16    rounded-md mt-28 ">Shop All</button>
+             </div>
         </section>
         <section>
             <div>
-              <div>
+              <div class="mt-52">
                 <div class="hero min-h-screen" style="background-image: url(images/team.png);">
                   <div class="hero-overlay bg-opacity-60"></div>
                   <div class="hero-content text-center text-neutral-content">
